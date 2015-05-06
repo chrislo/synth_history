@@ -1,6 +1,6 @@
 # Code samples for: 'A brief history of synthesis'
 
-These repository contains 6 implementations of classic synthesis techniques using the Web Audio API:
+This repository contains 6 implementations of classic synthesis techniques using the Web Audio API:
 
 - *Theremin*: A basic monophonic synthesiser where the pitch and volume of a single oscillator are controlled using the mouse pointer, a bit like waving your hands near a Theremin
 - *Additive Synthesis*: Create sounds by adding together sine waves. This demo also shows how to achieve polyphony (playing multiple notes at the same time) with the Web Audio API.
@@ -9,7 +9,18 @@ These repository contains 6 implementations of classic synthesis techniques usin
 - *Sampler*: A demonstration of how to load samples from an external source, map them to keys, and play them back at various time offsets. Samples the "Amen break".
 - *Granular*: A basic granular synthesis engine with variable grain length and grain density.
 
-In addition a simple class `keyboard.js` shows how to map QWERTY keys to midi note numbers.
+In addition a simple class `keyboard.js` shows how to map QWERTY keys
+to midi note numbers.
+
+## Running the code ##
+
+Each directory contains a file `index.html`. You'll need to arrange
+for that to be served locally to run the demo as some of them make
+requests for external resources that need to be served on the same
+origin. You probably have a favourite way of doing that. I like
+[Anvil for Mac](http://anvilformac.com/) as it's really easy to use.
+
+## Coding principles ##
 
 When writing these examples I tried to keep the ratio of Web Audio
 code to boilerplate as high as I could. I've avoided libraries,
