@@ -55,7 +55,7 @@ SamplingSynth.prototype.noteOff = function(midi_note_number) {
 };
 
 var Amen = {
-  url: '/amen.wav',
+  url: 'amen.wav',
   offsets: {
     48: 0,
     50: 0.431,

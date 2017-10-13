@@ -93,8 +93,8 @@ GranularSynth.prototype.play = function() {
 };
 
 window.onload = function() {
-  var fastSynth = new GranularSynth(context, '/short.wav', {grainsPerSecond: 10, grainLength: 4000, walkProbability: 0.5});
-  var slowSynth = new GranularSynth(context, '/short.wav', {grainsPerSecond: 40, grainLength: 40000, walkProbability: 1});
+  var fastSynth = new GranularSynth(context, 'short.wav', {grainsPerSecond: 10, grainLength: 4000, walkProbability: 0.5});
+  var slowSynth = new GranularSynth(context, 'short.wav', {grainsPerSecond: 40, grainLength: 40000, walkProbability: 1});
   var keyboard = new Keyboard(document);
 
   var playing = false;
